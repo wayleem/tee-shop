@@ -9,10 +9,12 @@
 <main>
   <div class="flex flex-col">
     <Navbar />
-    <Router>
-      <Route path="/" component={Home} />
-      <Route path="/catalog" component={Catalog} />
-      <Route path="/support" component={Support} />
-    </Router>
+    <div class="p-4">
+      <Router>
+        <Route path="/" component={Home} />
+        <Route path="/catalog" component={Catalog} />
+        <Route path="/support" component={Support} />
+      </Router>
+    </div>
   </div>
 </main>
