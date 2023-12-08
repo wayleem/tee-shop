@@ -1,4 +1,3 @@
 <div>
-  <h1>Hello from Support</h1>
-  <p>placeholder</p>
+  <h1 class="text-3xl">Hello from Support</h1>
 </div>
