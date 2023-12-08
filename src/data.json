@@ -1,0 +1,20 @@
+[
+  {
+    "id": "tshirt01",
+    "name": "Classic Cotton T-Shirt",
+    "description": "Comfortable and stylish, perfect for everyday wear.",
+    "price": 19.99,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["black", "white", "blue"],
+    "imageURL": "src/assets/placeholder.png"
+  },
+  {
+    "id": "tshirt02",
+    "name": "Graphic Tee",
+    "description": "Show your style with our cool graphic tee.",
+    "price": 24.99,
+    "sizes": ["S", "M", "L"],
+    "colors": ["red", "green", "yellow"],
+    "imageURL": "src/assets/placeholder.png"
+  }
+]
