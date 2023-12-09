@@ -4,6 +4,7 @@
   import Home from './components/pages/Home.svelte'
   import Catalog from './components/pages/Catalog.svelte'
   import Support from './components/pages/Support.svelte'
+  import Cart from './components/pages/Cart.svelte'
 </script>
 
 <main>
@@ -14,6 +15,7 @@
         <Route path="/" component={Home} />
         <Route path="/catalog" component={Catalog} />
         <Route path="/support" component={Support} />
+        <Route path="/cart" component={Cart} />
       </Router>
     </div>
   </div>

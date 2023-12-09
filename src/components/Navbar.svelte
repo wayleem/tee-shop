@@ -15,10 +15,13 @@
       >
     </Router>
   </div>
-  <div class="flex flex-row font-nav">
-    <nav>
+  <div class="flex flex-row space-x-10 font-nav">
+    <Router>
+      <Link class="font-nav text-unfocus hover:text-readable" to="/cart"
+        >My Cart</Link
+      >
       <!-- change to link later -->
       <div class="font-nav text-unfocus hover:text-readable">Log in</div>
-    </nav>
+    </Router>
   </div>
 </div>
