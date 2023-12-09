@@ -1,33 +1,22 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Counter.svelte'
+  import { Router, Route, Link } from 'svelte-routing'
+  import Navbar from './components/Navbar.svelte'
+  import Home from './components/pages/Home.svelte'
+  import Catalog from './components/pages/Catalog.svelte'
+  import Support from './components/pages/Support.svelte'
+  import Cart from './components/pages/Cart.svelte'
 </script>
 
 <main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-      <img src={viteLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
+  <div class="flex flex-col">
+    <Navbar />
+    <div class="p-4">
+      <Router>
+        <Route path="/" component={Home} />
+        <Route path="/catalog" component={Catalog} />
+        <Route path="/support" component={Support} />
+        <Route path="/cart" component={Cart} />
+      </Router>
+    </div>
   </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p class='text-red-300'>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
-  <h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
 </main>
-
